@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <Router /* basename="/manufanpage" */>
+      <Router basename="/manufanpage">
         <App />
       </Router>
     </React.StrictMode>
