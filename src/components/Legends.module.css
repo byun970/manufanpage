@@ -1,0 +1,51 @@
+.legends {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+.legends a {
+  text-decoration: none;
+}
+.legendsList {
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 15px 5px;
+}
+
+.legendsList:hover {
+  background-color: #e74c3c;
+  color: #eee;
+}
+
+.legendsList:hover img {
+  width: 95%;
+}
+
+.legendsList img {
+  transition: all 0.5s;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 10px;
+}
+
+.isClicked {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .legends {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+  .legendsList {
+    margin-bottom: 10px;
+  }
+}

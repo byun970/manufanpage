@@ -1,0 +1,35 @@
+.hilight {
+  padding: 100px;
+}
+.hilight ul {
+  padding: 0;
+}
+.hilight h1 {
+  margin-bottom: 30px;
+}
+.list {
+  list-style-type: none;
+}
+.list a{
+  padding: 20px;
+  background-color: #bdc3c7;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #34495e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.list img {
+  border-radius: 5px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

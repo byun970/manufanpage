@@ -1,0 +1,144 @@
+.navbar {
+  color: #eee;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.navbar_logo {
+  font-size: 2rem;
+}
+
+.navbar_menu,
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.navbar_menu li,
+.navbar_icons li {
+  padding: 8px 12px;
+  transition: all 0.5s;
+}
+
+.navbar_menu li a {
+  transition: all 0.5s;
+}
+
+.navbar_menu li a:hover {
+  padding: 20px;
+}
+
+.navbar_toggleBtn {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar_toggleBtn span {
+  font-size: 2rem;
+}
+
+.navbar_menu li:hover .navbar_link,
+.navbar_icons li:hover {
+  background-color: #eee;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 99;
+  }
+
+  .navbar_logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: red;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: 270px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: red;
+  }
+
+  .navbar_menu li:hover {
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .navbar_menu li:hover .navbar_link {
+    padding: 0px;
+    background-color: inherit;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons li {
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  .navbar_icons li:hover {
+    border: none;
+    padding: 5px;
+  }
+
+  .navbar_toggleBtn {
+    display: inline-block;
+    margin-top: 5px;
+    border: none;
+    background-color: red;
+    color: #eee;
+  }
+
+  .navbar_toggleBtn span {
+    font-size: 2rem;
+  }
+
+  .open {
+    max-height: 300px;
+    background-color: rgba(0,0,0,0.8);
+  }
+}

@@ -1,0 +1,26 @@
+.allplayers {
+  padding: 100px;
+}
+
+.allplayers h1 {
+  margin-bottom: 20px;
+}
+
+.allplayers .selected {
+  color: black;
+  background-color: #eee;
+}
+
+.allplayers button {
+  padding: 10px;
+  color: #eee;
+  background-color: red;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.allplayers button:hover {
+  color: black;
+  background-color: #eee;
+}

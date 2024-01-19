@@ -1,0 +1,24 @@
+.newsDetailWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.newsDetail {
+  text-align: center;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 20px;
+  border-radius: 5px;
+}
+.newsDetail h2, p {
+  margin-bottom: 20px;
+}
+.button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: #eee;
+}

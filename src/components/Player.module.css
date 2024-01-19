@@ -1,0 +1,44 @@
+.players{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 20px;
+  text-decoration: none;
+}
+.playersList {
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 15px 5px;
+}
+
+.playersList:hover {
+  background-color: #e74c3c;
+  color: #eee;
+}
+
+.playersList:hover img {
+  width: 95%;
+}
+
+.playersList img {
+  transition: all 0.5s;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .players {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+  .playersList {
+    margin-bottom: 10px;
+  }
+}

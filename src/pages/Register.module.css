@@ -1,0 +1,93 @@
+.registerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.registerWrapper::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url('../../public/img/main2.jpg');
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 450px;
+  border-radius: 20px;
+  background-color: #bdc3c7;
+  position: relative;
+}
+
+.register button, input, a {
+  margin: 10px 0px;
+}
+
+.register h2, button, label, a {
+  color: #2c3e50;
+}
+
+.register a {
+  text-decoration: none;
+  color: black;
+}
+
+.register a:hover {
+  color: white;
+}
+
+.register h2 {
+  position: absolute;
+  top: 20px;
+}
+
+.register input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.register button {
+  width: 175px;
+  padding: 5px 20px;
+  color: #eee;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.registerInput {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width:768px) {
+  .registerWrapper {
+    position: relative;
+  }
+  .register {
+    position: absolute;
+    top: 70px;
+    width: 70%;
+  }
+}

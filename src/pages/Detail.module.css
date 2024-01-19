@@ -1,0 +1,20 @@
+.detailWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 250px;
+  align-items: center;
+}
+
+.detailWrapper h1, h3, p {
+  margin-bottom: 15px;
+}
+
+.detailWrapper button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #eee;
+  background-color: red;
+  margin: 0px 10px;
+}
